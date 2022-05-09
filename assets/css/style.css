@@ -23,11 +23,9 @@ header {
 .logo {
     width:100px;
 }
-.logoimg {
-    width:80px;
-    height:80px;
-    background-color:#B28756;
-    border-radius:40px;
+.logoimg img{
+    width:60px;
+    height:60px;
 }
 .menu-opener {
     display:none;
