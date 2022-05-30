@@ -59,6 +59,7 @@ header {
     border-bottom:5px solid #B28756;
     color:#CCC;
 }
+
 .scrollbutton {
     background-color: #b28756;
     width: 50px;
@@ -73,6 +74,7 @@ header {
 .scrollbutton img {
     width: 40px;
     margin: 5px;
+}
 .button {
     display:inline-block;
     background-color:#B28756;
