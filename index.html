@@ -17,8 +17,8 @@
             </div>
         </div>
         <div class="menu">
-            <img class="menu-opener" src="assets/images/menu.png" />
-            <nav>
+            <img onclick="abrirmenu()" class="menu-opener" src="assets/images/menu.png" />
+            <nav class="menu-nav">
                 <ul>
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="">About us</a></li>
@@ -34,7 +34,7 @@
         </div>
     </div>
 </header>
-<div onclick="scrolltop()" class="scrollbutton"><img src="assets/images/arrow1.png" alt="arrow"></div>
+<div onclick="scrolltop()" class="scrollbutton"><img src="assets/images/arrow2.png" alt="arrow"></div>
 <!-----------------------------------------------BANNER----------------------------------------------->   
 <main>
     <section class="banner">
@@ -649,6 +649,19 @@
                 behavior:"smooth"
             });
         }
+
+        let nav = document.querySelector("nav[class='menu-nav']") 
+
+        function abrirmenu(){
+            if (document.querySelector('.menu-nav').classList.toggle('none')){
+              nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
+         
+         
+            };
+        
     </script>
 </body>
 </html>
