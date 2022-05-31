@@ -642,12 +642,24 @@
 </footer>
 
     <script>
-        function scrolltop(){
+
+        document.addEventListener('scroll', () => {
+        let scrollHeight = window.scrollY
+        let button = document.querySelector('.scrollbutton')
+
+        if(scrollHeight > 0) {
+            button.style.display = 'block'
+        } else {
+            button.style.display = 'none'
+        }
+        })
+
+        function scrolltop() {
             window.scrollTo({
-                top:0,
-                left:0,
-                behavior:"smooth"
-            });
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
         }
 
         let nav = document.querySelector(".menu-nav") 
