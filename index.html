@@ -650,10 +650,10 @@
             });
         }
 
-        let nav = document.querySelector("nav[class='menu-nav']") 
+        let nav = document.querySelector(".menu-nav") 
 
         function abrirmenu(){
-            if (document.querySelector('.menu-nav').classList.toggle('none')){
+            if (nav.style.display=="none"){
               nav.style.display = "block";
             } else {
                 nav.style.display = "none";
