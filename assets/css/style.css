@@ -61,6 +61,7 @@ header {
 }
 
 .scrollbutton {
+    display: none;
     background-color: #fff;
     width: 45px;
     height: 45px;
