@@ -643,17 +643,7 @@
 
     <script>
 
-        document.addEventListener('scroll', () => {
-        let scrollHeight = window.scrollY
-        let button = document.querySelector('.scrollbutton')
-
-        if(scrollHeight > 0) {
-            button.style.display = 'block'
-        } else {
-            button.style.display = 'none'
-        }
-        })
-
+        //FUNÇÃO DO BOTÃO SUBIR AO TOPO
         function scrolltop() {
             window.scrollTo({
                 top: 0,
@@ -662,6 +652,21 @@
             })
         }
 
+        //FUNÇÃO PARA OCULTAR BOTÃO SE JÁ ESTIVER NO TOPO
+        function botaohidden(){
+            if (window.scrollY === 0){
+                //ocultar botao
+                document.querySelector('.scrollbutton').style.display = 'none'
+            } else {
+                document.querySelector('.scrollbutton').style.display = 'block'
+            }
+        }
+
+        //EVENTO PARA EXECUTAR A FUNÇÃO DE OCULTAR BOTÃO
+        document.addEventListener('scroll', botaohidden);
+
+
+        //FUNÇÃO PARA ABRIR MENU NA VERSÃO MOBILE
         let nav = document.querySelector(".menu-nav") 
 
         function abrirmenu(){
@@ -670,9 +675,7 @@
             } else {
                 nav.style.display = "block";
             }
-         
-         
-            };
+            }
         
     </script>
 </body>
